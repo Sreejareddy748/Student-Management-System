@@ -1,3 +1,3 @@
 # Student Management System
 
-This project uses HTML and CSS.
+This project uses HTML, CSS and JavaScript.
