@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+        <p class="subtitle">Manage Student Records Easily</p>
+
+        <!-- Student Form -->
+        <div class="form-box">
+
+            <h2>Add Student Details</h2>
+
+            <input type="text" id="name"
+                   placeholder="Enter Student Name">
+
+            <input type="text" id="roll"
+                   placeholder="Enter Roll Number">
+
+            <input type="text" id="course"
+                   placeholder="Enter Course">
+
+            <input type="number" id="marks"
+                   placeholder="Enter Marks">
+
+            <button onclick="addStudent()">
+                Add Student
+            </button>
+
+        </div>
+
+        <!-- Search Box -->
+        <input type="text" id="search"
+               placeholder="Search Student by Name"
+               onkeyup="searchStudent()">
+
+        <!-- Student Table -->
+        <h2>Student Records</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No</th>
+                    <th>Course</th>
+                    <th>Marks</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
